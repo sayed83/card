@@ -1,0 +1,112 @@
+.registration {
+    width: 100%;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: Exo-Regular;
+	position: relative;
+	overflow: hidden;
+}
+.registration:before{
+	background-image: url('../img/pattern.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.reg-inner {
+    padding: 150px 0;
+    position: relative;
+}
+.reg-inner:before {
+    background-color: rgba(0, 0, 0, 0.3);
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.reg-deatails {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-left: 13%;
+}
+.reg-title{
+	width:100%;
+}
+.reg-title h3 {
+   font-size: 35px;
+	font-family: ubuntu-Medium;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	line-height: 50px
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 1%;
+}
+.register-link a{
+	text-decoration: none;
+    font-size: 18px;
+    color: #4b4949;
+    font-family: Exo-Regular;
+}
+.social-icon {
+
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px dashed #9c9b9b;
+    margin-bottom: 2%;
+
+}
+.social {
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.5s ease all;
+}
+.btn-outline-secondary{
+	width: 70%;
+	height: 50px;
+}
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #cecfd1;
+    border-color: #b3b5b7;
+}
+.social-media-icon {
+    width: auto;
+    height: 20px;
+    display: inline;
+    margin-right: 6px;
+}
+.form-check {
+    color: #4b4949;
+    font-family: Exo-Regular;
+    text-align: center;
+}
+.form-check-label a {
+    text-decoration: none;
+    color: #D41515;
+}
+.register-link {
+    text-align: center;
+    margin-top: 1%;
+}

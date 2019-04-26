@@ -1,0 +1,131 @@
+.contact {
+    position: relative;
+    width: 100%;
+}
+.contact:before {
+    background-image: url('../img/pattern.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact-inner {
+    padding: 100px 0px;
+    position: relative;
+}
+
+.contact-inner:before{
+	background-color: rgba(0, 0, 0, 0.3);
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.contact-from {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 50px;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.contact-title {
+    width: 100%;
+}
+
+.contact-title h3 {
+    font-size: 36px;
+    line-height: 50px;
+    font-family: ubuntu-Medium;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.contact-details {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.contact-details .form-control {
+    background-color: rgba(86, 119, 252, 0.05);
+    font-family: Ubuntu-Regular;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-color: #5677fc;
+    color: #3a3b3c;
+    resize: none;
+    height: 40px;
+}
+.contact-hotline {
+    padding: 15px;
+    background: #f9b320;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.contact-hotline:before{
+	position: absolute;
+    content: '\f095';
+    font-family: FontAwesome;
+    font-size: 160px;
+    line-height: 240px;
+    line-height: 142px;
+    color: rgba(58, 59, 60, 0.15);
+    top: 0px;
+    left: 0px;	
+}
+.hotline {
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    display: block;
+    width: 70%;
+    margin-top: 10px;
+    z-index: 2;
+}
+.hotline p {
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+    font-family: Ubuntu-Medium;
+    margin-bottom: 0px;
+    line-height: 40px;
+}
+.hotline-image {
+    width: 30%;
+    float: right;
+}
+.hotline-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.contact-info {
+    width: 100%;
+}
+.contact-info h5 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Ubuntu-Medium;
+    line-height: 30px;
+}
+.contact-info p {
+    font-family: Ubuntu-Regular;
+    color: #7a7777;
+}

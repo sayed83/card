@@ -1,0 +1,19 @@
+@media (max-width: 768px) { 
+    .show_on_pc{
+        display:none;
+    }
+    .show_on_mobile{
+        display:block;
+    }
+}
+@media (max-width: 991px) {
+    
+}
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 1199px) {
+    
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
