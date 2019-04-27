@@ -17,8 +17,6 @@ function acceptedORCanceled($id, $value){
 	$amount = $fetch['amount'];
 	//echo $amount;
 	$requester = $fetch['uid'];
-	//query2 = mysqli_query(DB::g()->connect(),$query_class->query('rows',array('*', 'registration', 'id', '=', $requester));
-	//$query2 = mysqli_query(DB::g()->connect(),query::g()->query('rows',array('*', 'registration', 'id', '=', $requester)));
 	$query2 = mysqli_query(DB::g()->connect(), "SELECT * FROM `registration` WHERE `id` = '$requester'");
 	$fetch2 = mysqli_fetch_assoc($query2);
 	
@@ -26,6 +24,9 @@ function acceptedORCanceled($id, $value){
 	$new_balance = $old_balance + $amount;
 	$update = mysqli_query(DB::g()->connect(), query::g()->update('registration',['balance'=>$new_balance],['id', '=', $requester]));
 	$update = mysqli_query(DB::g()->connect(), query::g()->update('fund_request',['status'=> $value],['id','=',$id]));
+	$date = other::dates();
+	$time = other::times();
+	$transection = query::g()->insert('transection',array("amount"=>$amount,"old_balance"=>$old_balance,"new_balance"=>$new_balance,"date"=>$date, "time"=>$time, "remark"=>"Added"));
 	header("LOCATON:requests.php");
 }
 

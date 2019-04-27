@@ -29,15 +29,16 @@ if(isset($_POST['code_count'])){
 
 	<div class="container col-lg-10 col-md-10 col-sm-9 col-xs-12">
 	 	<?php 
-		if(isset($_GET['a'])){?>
+		if(isset($_GET['a'])){
+			?>
 			<div class="panel panel-default  "  >
 				<form  class="panel-body form-inline" action="#" method="post"  >
 					<input type="text" name="code_count"  class="form-control" />
 					<input type="submit" value="Create Code" class="btn btn-primary"  />
 				</form>
 			</div>
-		<?php }
-		
+		<?php 
+		}	
 		?>
 		<div class="panel panel-default">
 			<div class="panel-heading">
